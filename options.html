@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Options</title>
+    <style>
+        .item {
+            margin: 5px;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 0.5rem;
+            margin-top: 3vh;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .item h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        #stored_enable_menu_scroll{font-weight: bold;}
+
+    </style>
+</head>
+
+<body>    
+    <section class="container"  style="margin-left:auto;margin-right:auto;margin-top: 10vh;">
+        <div class="item">
+            <h1>Options to Pin menu on scroll</h1>            
+        </div>
+        <div class="item">
+            <label for="enable_menu_scroll" style="width:100%;font-size: 1rem;">
+                <sup title="Enable scroll of menu ">Enable menu scroll</sup>
+                <input type="checkbox" id="enable_menu_scroll" style="
+                    width: 10%;height: 12vh;
+                    cursor: pointer;margin-top: 3vh;
+                    margin-bottom: 3vh;margin-left: 4%;
+                    margin-right: 2%;text-align: center;
+                    font-size: 1.2rem;"
+                >
+            </label>
+        </div>
+        <hr style=" height: 0; color: transparent; width: 50%; ">
+        <div class="item">
+            <em style="width:100%;">
+                Current settings:
+                <span id="stored_enable_menu_scroll"></span>
+            </em>
+            <hr style=" height: 0; color: transparent; width: 0; ">
+            <em>If 'false', nothing will change on pages.</em>
+        </div>
+        <div class="item">
+            <div id="status"></div>
+        </div>
+        <div class="item" id="save" style=" margin-top: 9vh;">
+            <button id="save" style="width: 50%;height: 20vh;cursor: pointer;">Save</button>
+        </div>
+    </section>
+    <script src="options.js"></script>
+</body>
+
+</html>

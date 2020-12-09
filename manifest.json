@@ -1,0 +1,35 @@
+{
+    "name": "Laravel Docs Pinned Anchor Menu",
+    "version": "1.1",
+    "description": "Pin the anchor menu of the current Laravel content when scrolling the page.",
+
+    "permissions": ["tabs", "storage", "https://laravel.com/docs/*", "http://laravel.com/docs/*"],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "js": ["script.js"],
+        "matches": ["https://laravel.com/docs/*"]
+    }],
+
+    "icons": {
+        "16": "images/icon_16.png",
+        "32": "images/icon_32.png",
+        "48": "images/icon_48.png",
+        "128": "images/icon_128.png"
+    },
+
+    "short_name": "Lara Docs Pined Menu",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+
+    "manifest_version": 2
+}
