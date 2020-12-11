@@ -1,6 +1,6 @@
 {
     "name": "Laravel Docs Pinned Anchor Menu",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Pin the anchor menu of the current Laravel content when scrolling the page.",
 
     "permissions": ["tabs", "storage", "https://laravel.com/docs/*", "http://laravel.com/docs/*"],
